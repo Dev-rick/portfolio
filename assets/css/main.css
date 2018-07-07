@@ -49,11 +49,10 @@ img {
 
 .logo {
   max-width: 22%;
-  float: left;
+  margin-left: 0;
 }
 
 .name {
-
   width: 100%;
   text-align: right;
 }
@@ -74,7 +73,6 @@ img {
 }
 
 hr {
-  display: block;
   height: 2px;
   border: 0;
   border-top: 4px solid #7d97ad;
@@ -93,7 +91,6 @@ hr {
 
 article {
   max-width: 90%;
-
 }
 
 .main_picture {
@@ -102,21 +99,30 @@ article {
 .heading1 {
   margin-top: 13px;
   margin-bottom: 0px;
-  weight: 100;
   font-size: 20px;
   color: #7d97ad;
   text-decoration: underline;
 }
 
+.p1 {
+  font-size: 15px;
+}
+
+.featured_work {
+  display: flex;
+  flex-wrap: wrap;
+  height: 400px;
+  align-content: space-between;
+}
+
+
 .work {
-  max-width: 100%;
-  display: inline-block;
   margin-left: 0.2em;
   margin-top: 2em;
   text-align: center;
   border: 2px black solid;
   border-radius: 5px;
-
+  text-decoration: none;
 }
 
 .work:hover {
@@ -125,12 +131,13 @@ article {
 
 .description_of_work {
   font-size: 20px;
-  display: inline-block;
   margin: 10px;
-  text-decoration: none;
   color: black;
 }
 
+.links_without_textdecoration {
+  text-decoration: none;
+}
 
 /*
  *
